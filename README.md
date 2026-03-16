@@ -10,22 +10,26 @@ AI Operating Layer — terminal-native AI orchestration.
 curl -fsSL https://raw.githubusercontent.com/sweetcheeks72/helios-installer/main/bootstrap.sh | bash
 ```
 
-### Windows (PowerShell)
+### Windows
 
-```powershell
-irm https://raw.githubusercontent.com/sweetcheeks72/helios-installer/main/install.ps1 | iex
-```
+Helios runs natively on macOS and Linux. On Windows, use WSL:
 
-### npm (any platform)
-
-```bash
-npm install -g @familiar/pi
-```
+1. Install WSL: `wsl --install` (PowerShell as Admin)
+2. Restart, open Ubuntu
+3. Run the Linux install command above
 
 ## Requirements
 
 - Node.js 18+
-- An API key from any supported LLM provider
+- Git
+- Docker (auto-installed on macOS)
+
+## Post-Install
+
+```bash
+helios doctor    # Verify setup
+helios           # Launch
+```
 
 ## Links
 
